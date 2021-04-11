@@ -1,5 +1,7 @@
 import React from "react"
-import {withToggler} from "./HOCs/withToggler"
+import Toggler from "./Toggler"
+// render the Toggler inside the Menu, and use the render prop to determine what will get displayed
+// remember to bring in the "goodies" (state and methods) to that function so you can make this work
 
 function Menu(props) {
     return (
@@ -16,4 +18,4 @@ function Menu(props) {
     ) 
 }
 
-export default withToggler(Menu, {defaultOnValue: true})
+export default Menu
